@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction Results</title>
+    <!-- Tambahkan CSS atau styling jika diperlukan -->
+    <style>
+        /* CSS styles */
+    </style>
+</head>
+<body>
+    <h1>Prediction Results</h1>
+
+    <!-- Tambahkan konten yang ingin ditampilkan -->
+    <table>
+        <thead>
+            <tr>
+                <th>Name of File</th>
+                <th>Cropped Image Path</th>
+                <th>Predicted Text</th>
+                <!-- Tambahkan kolom-kolom lain jika diperlukan -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Gunakan loop untuk menampilkan hasil prediksi -->
+            {% for index, row in filtered_df.iterrows() %}
+                <tr>
+                    <td>{{ row['Name of File'] }}</td>
+                    <td>{{ row['cropped_image_saved_path'] }}</td>
+                    <td>{{ row['Prediksi'] }}</td>
+                    <!-- Tambahkan sel-sel lain jika diperlukan -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Tambahkan elemen atau konten lainnya jika diperlukan -->
+
+</body>
+</html>

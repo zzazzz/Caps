@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TUNE CHECK</title>
+    <style>
+        body {
+            background-color: lightblue;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Mengubah ini agar konten berada di tengah */
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .scooter {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Posisikan gambar scooter ke atas */
+            margin-bottom: 10px; /* Menambahkan margin bawah untuk mendekatkan gambar scooter ke "TUNE CHECK" */
+        }
+        .scooter img {
+            width: 250px;
+            height: auto; /* Ubah ukuran gambar jika diperlukan */
+        }
+        h1 {
+            margin-top: 0; /* Mengurangi margin atas */
+            margin-bottom: 20px; /* Menambahkan margin bawah untuk mendekatkan "TUNE CHECK" ke field input */
+        }
+        .input-field {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            margin-bottom: 20px; /* Menambahkan margin bawah untuk mendekatkan field input ke tombol "CHECK" */
+            width: 200px;
+        }
+        .input-field input {
+            border: none;
+            width: 80%;
+        }
+        .button, .upload, .remove {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        function removeFile() {
+            document.getElementById("images").value = "";
+        }
+    </script>
+</head>
+<body>
+    <div class="scooter">
+        <img src="https://i.ibb.co/WvKbybx/Pngtree-vespa-vector-design-6237570.png" alt="scooter image">
+    </div>
+    <h1>TUNE CHECK</h1>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <input type="file" id="image" name="image" class="upload" accept=".jpg, .jpeg, .png" required>
+      <input type="submit" value="CHECK" class="button">
+    </form>
+    <button onclick="removeFile()" class="remove">Remove</button>
+
+    <p>Aplikasi untuk mengecek pelanggaran lalu lintas kendaraan motor</p>
+    
+</body>
+</html>
