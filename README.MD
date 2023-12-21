@@ -1,9 +1,10 @@
 # Nyenyak-model-API
 
 ### Prerequisites
-- clone the repository
+clone the repository
 '''
 git clone https://github.com/albaruzz/Caps
+'''
 - Python 3.x
 - pip (package installer for Python)
 
