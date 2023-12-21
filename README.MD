@@ -19,4 +19,3 @@ pip install -r requirements.txt
 python /Deployment/app.py
 ```
 Use the `/predict` endpoint for making predictions. Send a POST request with file 'image' to get predictions.
-```
