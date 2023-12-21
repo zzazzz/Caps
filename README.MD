@@ -1,8 +1,9 @@
 # Tune check
 
 ### clone repository
-  '''bash
-  https://github.com/albaruzz/Caps
+```
+https://github.com/albaruzz/Caps
+```
 
 ### Prerequisites
 - Python 3.x
