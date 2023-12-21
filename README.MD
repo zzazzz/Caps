@@ -5,8 +5,8 @@ clone the repository
 '''
 git clone https://github.com/albaruzz/Caps
 '''
-- Python 3.x
-- pip (package installer for Python)
+Python 3.x
+pip (package installer for Python)
 
 ### 1. Create a virtual environment (optional)
 ```
