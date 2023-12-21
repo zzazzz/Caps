@@ -1,7 +1,7 @@
 # Tune check
 
 ### clone repository
-```
+```bash
 https://github.com/albaruzz/Caps
 ```
 
