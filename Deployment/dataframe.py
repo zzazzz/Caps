@@ -14,17 +14,17 @@ from datetime import datetime
 app = Flask(__name__)
 
 # If you want to start from the pretrained model, load the checkpoint with `VisionEncoderDecoderModel`
-processor = TrOCRProcessor.from_pretrained(r'C:\Users\ziyad\Documents\Bangkit\deployment\training')
+processor = TrOCRProcessor.from_pretrained('ziyadazz/OCR-PLAT-NOMOR-INDONESIA')
 
 # TrOCR is a decoder model and should be used within a VisionEncoderDecoderModel
-model = VisionEncoderDecoderModel.from_pretrained(r'C:\Users\ziyad\Documents\Bangkit\deployment\training')
+model = VisionEncoderDecoderModel.from_pretrained('ziyadazz/OCR-PLAT-NOMOR-INDONESIA')
 
-model_driver = YOLO("C:/Users/ziyad/Documents/Bangkit/deployment/best.pt")
-model_object = YOLO("C:/Users/ziyad/Documents/Bangkit/deployment/best (1).pt")  # Ganti path dengan model yang sesuai
+model_driver = YOLO("best.pt")
+model_object = YOLO("best2.pt")  # Ganti path dengan model yang sesuai
 
 @app.route('/')
 def index_view():
-    return render_template('index.html')
+    return render_template('contoh.html')
 
 @app.route('/predict', methods=['POST'])
 def detect_object():
@@ -296,7 +296,7 @@ def detect_object():
 
 
     # Return the DataFrame as a JSON response
-    return render_template('prediction.html', new_df=new_df)
+    return render_template('web 2.html', new_df=new_df)
 
 
 ngrok_tunnel = ngrok.connect(8000)
