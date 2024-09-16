@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.landingWhole {
+  width: 100%;
+  height: 671px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.landingWhole .left_side {
+  min-height: 671px;
+  background-color: #71A1B6;
+  width: 50%;
+}
+
+.landingWhole .rightside {
+  position: relative;
+  width: 50%;
+}
+
+.landingWhole .rightside img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: grayscale(62%) brightness(200%) saturate(171%) contrast(79%) invert(13%);
+  -webkit-filter: grayscale(62%) brightness(200%) saturate(171%) contrast(79%) invert(13%);
+  -moz-filter: grayscale(62%) brightness(200%) saturate(171%) contrast(79%) invert(13%);
+}
+
+.landingWhole .Text_box {
+  width: 354px;
+  height: 466px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 70px;
+  margin-top: 295px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 15 !important;
+}
+
+
+.landingWhole .Text_box .Text {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 10;
+  font-size: 10px;
+  width: 350px;
+}
+
+.landingWhole .Text_box .Text1 {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 50;  
+  letter-spacing: 0.5px;
+  font-size: 24px;
+}
+
+a.tbl-silver{
+  background: #678eb3;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #ffff;
+  cursor: pointer;
+  font-weight: bold;  
+  font-size: 20px;
+}
+
+.landingWhole .Text_box .headera {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  color: #fff !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 54px;
+}
+
+.landingWhole .Text_box .second {
+  color: #fff !important;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 19px;
+  width: 240px;
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+}
+
+.landingWhole .Text_box .Inner_Text {
+  width: 150px;
+}
+
+.headera {
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#000)) no-repeat right bottom/0 var(--bg-h);
+  background: linear-gradient(0deg, #000, #000) no-repeat right bottom/0 var(--bg-h);
+  -webkit-transition: background-size 500ms ease-out;
+  transition: background-size 500ms ease-out;
+  --bg-h: 100%;
+}
+
+.headera:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.underline {
+  padding-bottom: 2px;
+  --bg-h: 2px;
+}
+
+body {
+  font-size: 2em;
+  text-align: center;
+}
+
+.headera {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+}
+
+.second {
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#000)) no-repeat right bottom/0 var(--bg-h);
+  background: linear-gradient(0deg, #000, #000) no-repeat right bottom/0 var(--bg-h);
+  -webkit-transition: background-size 500ms ease-out;
+  transition: background-size 500ms ease-out;
+  --bg-h: 100%;
+}
+
+.second:where(:hover, :focus-visible) {
+  background-size: 100% var(--bg-h);
+  background-position-x: left;
+}
+
+.second {
+  padding-bottom: 1px;
+  --bg-h: 1px;
+}
+
+body {
+  font-size: 2em;
+  text-align: center;
+}
+
+.second {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+}
+.Bar {
+  width: 100%;
+  height: 70px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  position: fixed;
+  z-index: 125125;
+}
+
+.Bar .logo_side {
+  position: relative;
+}
+
+.Bar .logo_side img {
+  width: 120px;
+}
+.Bar .Scrollable ul {
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.Bar .Scrollable ul li{
+  float: left;
+}
+.Bar .Scrollable a {
+  -webkit-text-decoration: 0;
+          text-decoration: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #000;
+  margin-right: 25px;
+}
+
+.Bar .Scrollable a:hover {
+  color: grey !important;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.Bar .cart_side i {
+  font-size: 24px;
+  margin-right: 25px;
+}
+
+.Bar .cart_side i:hover {
+  color: green;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+}
+
+.apa{
+  display: flex;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'comic sans ms';
+  color: #553939;
+}
+
+#gambar-ketiga {
+  margin-right: 30px;
+  width: 45%;
+}
+
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 2px solid #553939;
+  padding: 20px; /* Padding untuk memberikan ruang di dalam kotak */
+  margin: 20px; /* Margin untuk memberikan ruang di luar kotak */
+}
+
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'comic sans ms';
+  color: #553939;
+}
+
+h2{
+  font-size: 20px !important;
+  color: #553939;
+  width: 600px;
+  margin-top: 10px
+}
+
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.Footer_box {
+  width: 100vw;
+  height: 400px;
+  background-color: #71A1B6;
+}
+
+.Footer_box .texttt {
+  width: 700px;
+  height: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.Footer_box .texttt .footp {
+  color: #fff !important;
+  font-size: 19px;
+}
+
+.Footer_box .texttt input {
+  margin-bottom: 25px;
+}
+
+/*# sourceMappingURL=app.css.map */

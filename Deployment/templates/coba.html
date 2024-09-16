@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Pelanggaran</title>
+</head>
+<body>
+    <h2>Laporan Pelanggaran</h2>
+
+    <!-- Menampilkan gambar dari variabel 'image' -->
+    <img src="{{ image }}" alt="Deteksi Objek">
+
+    <table border="1">
+        <tr>
+            <td>Nomor Polisi:</td>
+            <td>{{ data }}</td> <!-- Ganti dengan variabel yang benar dari Flask -->
+        </tr>
+        <tr>
+            <td>Jenis Pelanggaran:</td>
+            <td>{{ row['jenis_pelanggaran'] }}</td> <!-- Ganti dengan variabel yang benar dari Flask -->
+        </tr>
+        <tr>
+            <td>Total Denda:</td>
+            <td>100.000</td> 
+        </tr> 
+    </table>
+
+    <button type="button">{{ 'PASSED' if row['kelayakan']=='Pengendara Layak' else 'FAILED' }}</button>
+</body>
+</html>
